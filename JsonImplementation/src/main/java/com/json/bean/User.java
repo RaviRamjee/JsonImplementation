@@ -5,56 +5,67 @@ import com.googlecode.objectify.annotation.Id;
 public class User {
 	
 	@Id
-	private int user_id;
-	private String user_name;
-	private String user_email;
-	private int user_age;
-	private String user_address;
+	private int userId;
+	private String userName;
+	private String userEmail;
+	private int userAge;
+	private String userAddress;
 	
 	public User() {} 
 	
-	public User(int user_id, String user_name, String user_email, int user_age, String user_address) {
+	public User(int userId, String userName, String userEmail, int userAge, String userAddress) {
 		super();
-		this.user_id = user_id;
-		this.user_name = user_name;
-		this.user_email = user_email;
-		this.user_age = user_age;
-		this.user_address = user_address;
+		this.userId = userId;
+		this.userName = userName;
+		this.userEmail = userEmail;
+		this.userAge = userAge;
+		this.userAddress = userAddress;
 	}
 	@Override
 	public String toString() {
-		return "User [user_id=" + user_id + ", user_name=" + user_name + ", user_email=" + user_email + ", user_age="
-				+ user_age + ", user_address=" + user_address + "]";
+		return "User [userId=" + userId + ", userName=" + userName + ", userEmail=" + userEmail + ", userAge="
+				+ userAge + ", userAddress=" + userAddress + "]";
 	}
-	public int getUser_id() {
-		return user_id;
+
+	public int getUserId() {
+		return userId;
 	}
-	public void setUser_id(int user_id) {
-		this.user_id = user_id;
+
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
-	public String getUser_name() {
-		return user_name;
+
+	public String getUserName() {
+		return userName;
 	}
-	public void setUser_name(String user_name) {
-		this.user_name = user_name;
+
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
-	public String getUser_email() {
-		return user_email;
+
+	public String getUserEmail() {
+		return userEmail;
 	}
-	public void setUser_email(String user_email) {
-		this.user_email = user_email;
+
+	public void setUserEmail(String userEmail) {
+		this.userEmail = userEmail;
 	}
-	public int getUser_age() {
-		return user_age;
+
+	public int getUserAge() {
+		return userAge;
 	}
-	public void setUser_age(int user_age) {
-		this.user_age = user_age;
+
+	public void setUserAge(int userAge) {
+		this.userAge = userAge;
 	}
-	public String getUser_address() {
-		return user_address;
+
+	public String getUserAddress() {
+		return userAddress;
 	}
-	public void setUser_address(String user_address) {
-		this.user_address = user_address;
+
+	public void setUserAddress(String userAddress) {
+		this.userAddress = userAddress;
 	}
+	
 	
 }

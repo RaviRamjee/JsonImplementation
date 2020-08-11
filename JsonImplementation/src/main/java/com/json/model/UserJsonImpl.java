@@ -14,9 +14,9 @@ public class UserJsonImpl {
 
 	public void insert(User u) {
 		// creating Entity class object to create entity kind in datastore
-		Entity e = new Entity("User");
+		Entity e = new Entity("User",101);
 
-		// e.setProperty("user_id", u.getUser_id());
+		e.setProperty("userId", u.getUserId());
 		e.setProperty("userName", u.getUserName());
 		e.setProperty("userEmail", u.getUserEmail());
 		e.setProperty("userAge", u.getUserAge());
@@ -25,4 +25,15 @@ public class UserJsonImpl {
 
 	}
 
+	public void updateUserData(User u) {
+		// creating Entity class object to create entity kind in datastore
+		Entity e = new Entity("User",102);
+
+		e.setProperty("userId", u.getUserId());
+		e.setProperty("userName", u.getUserName());
+		e.setProperty("userEmail", u.getUserEmail());
+		e.setProperty("userAge", u.getUserAge());
+		e.setProperty("userAddress", u.getUserAddress());
+		ds.put(e);
+	}
 }

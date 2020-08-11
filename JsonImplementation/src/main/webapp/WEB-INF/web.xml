@@ -14,6 +14,6 @@
 
   
   <welcome-file-list>
-    <welcome-file>Registration.html</welcome-file>
+    <welcome-file>GetUserId.html</welcome-file>
   </welcome-file-list>
 </web-app>

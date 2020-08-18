@@ -13,7 +13,7 @@ public class UserDataTest {
 		
 		//getting User class Object
 		User user=new User();
-		user.setUserId(101);
+		user.setUserId("one");
 		user.setUserName("Samrat Kumar");
 		user.setUserEmail("samrat@gmail.com");
 		user.setUserAge(25);

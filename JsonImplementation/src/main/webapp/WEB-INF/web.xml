@@ -7,13 +7,48 @@
 		<servlet-name>UserServletTest</servlet-name>
 		<servlet-class>com.json.controller.UserServletTest</servlet-class>
 	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>Testing</display-name>
+		<servlet-name>Testing</servlet-name>
+		<servlet-class>com.json.controller.Testing</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>UserServlet</display-name>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>JsonImplementation.UserServlet</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>UserServletTest</servlet-name>
 		<url-pattern>/UserServletTest</url-pattern>
 	</servlet-mapping>
-
+	<servlet-mapping>
+		<servlet-name>Testing</servlet-name>
+		<url-pattern>/Testing</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/UserServlet</url-pattern>
+	</servlet-mapping>
+ <filter>
+	<filter-name>UserObjectifyFilter</filter-name>
+	<filter-class>JsonImplementation.UserObjectifyFilter</filter-class>
+</filter>
+<filter-mapping>
+	<filter-name>UserObjectifyFilter</filter-name>
+	<url-pattern>/*</url-pattern>
+	<dispatcher>REQUEST</dispatcher>
+    <dispatcher>INCLUDE</dispatcher>
+    <dispatcher>FORWARD</dispatcher>
+</filter-mapping> 
+<listener>
+<listener-class>JsonImplementation.UserRegister</listener-class>
+</listener> 
   
   <welcome-file-list>
-    <welcome-file>GetUserId.html</welcome-file>
+    <welcome-file>Index.html</welcome-file>
   </welcome-file-list>
 </web-app>

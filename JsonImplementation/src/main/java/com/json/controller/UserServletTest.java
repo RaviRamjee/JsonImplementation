@@ -72,7 +72,7 @@ public class UserServletTest extends HttpServlet {
 		String address = request.getParameter("address");
 
 		User user = new User();
-		user.setUserId(101);
+		user.setUserId("one");
 		user.setUserName(name);
 		user.setUserAge(age);
 		user.setUserAddress(address);

@@ -1,11 +1,13 @@
 package com.json.bean;
 
+import com.googlecode.objectify.annotation.Entity;
 import com.googlecode.objectify.annotation.Id;
 
+@Entity
 public class User {
 	
 	@Id
-	private int userId;
+	private String userId;
 	private String userName;
 	private String userEmail;
 	private int userAge;
@@ -13,7 +15,7 @@ public class User {
 	
 	public User() {} 
 	
-	public User(int userId, String userName, String userEmail, int userAge, String userAddress) {
+	public User(String userId, String userName, String userEmail, int userAge, String userAddress) {
 		super();
 		this.userId = userId;
 		this.userName = userName;
@@ -27,11 +29,11 @@ public class User {
 				+ userAge + ", userAddress=" + userAddress + "]";
 	}
 
-	public int getUserId() {
+	public String getUserId() {
 		return userId;
 	}
 
-	public void setUserId(int userId) {
+	public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

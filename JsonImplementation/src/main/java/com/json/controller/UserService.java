@@ -7,9 +7,9 @@ public class UserService {
 	
 	public List<User> getUsers()
 	{
-		return Arrays.asList(new User(1001,"Rahul","rahul@gmail.com",23,"Banglore"),
-				new User(1002,"Sam","sam@gmail.com",25,"Hyderabad"),
-				new User(1003,"Chandan","chand@gmail.com",26,"Mumbai"));
+		return Arrays.asList(new User("one","Rahul","rahul@gmail.com",23,"Banglore"),
+				new User("two","Sam","sam@gmail.com",25,"Hyderabad"),
+				new User("three","Chandan","chand@gmail.com",26,"Mumbai"));
 	}
 
 }

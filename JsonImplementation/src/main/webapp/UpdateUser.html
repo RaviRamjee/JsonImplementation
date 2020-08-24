@@ -69,21 +69,28 @@ li a:hover:not(.active) {
   <li><a href="./DeleteUser.html">Delete User</a></li>
 </ul>
 	<section class="contacts">
+		
 		<div class="container">
 			<div class="row">
 				<div class="contacts-find">
 					<div class="col-md-5 col-md-offset-3">
 						<div class="contacts-form"
 							style="background-color: rgba(80, 54, 84, 0.6); height: 100%">
-							<a href="./UserDetails.html">Show Users</a>&nbsp <a href="./UpdateUser.html">Update user</a>&nbsp <a href="./DeleteUser.html">Delete User</a>
-							<h1 style="font-size: 200%; color: White" class="blog-title">Registration</h1>
+							 
+							<h1 style="font-size: 200%; color: White" class="blog-title">Update data</h1>
 							<div id="success"></div>
 
-							<form action="./UserDatastoreImpl" method="POST" id="contactForm">
+							<form action="./UserDatastoreImpl" method="get" id="contactForm">
 								
-                                 
+								 <div class="comment-form__input">
+									<input type="hidden" class="form-control" name="put"
+										id="user-name" placeholder="Id" value="update" />
+								</div>
+                                 <div class="comment-form__input">
+									<input type="text" class="form-control" name="Id"
+										id="user-name" placeholder="Id" />
+								</div>
 								<div class="comment-form__input">
-
 									<input type="text" class="form-control" name="name"
 										id="user-name" placeholder="Full Name" />
 								</div>
@@ -103,12 +110,9 @@ li a:hover:not(.active) {
 								<center>
 									<button type="submit"
 										class="btn button button--red triangle triangle--12"
-										value="SignUp">Sign Up</button>
+										value="SignUp">Update</button>
 								</center>
-								<br>
-								<center>
-									<a href="./Login.html">Already have an account? Log in</a>
-								</center>
+								
 							</form>
 						</div>
 					</div>

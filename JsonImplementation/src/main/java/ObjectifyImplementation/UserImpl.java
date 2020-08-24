@@ -1,4 +1,4 @@
-package JsonImplementation;
+package ObjectifyImplementation;
 
 import static com.googlecode.objectify.ObjectifyService.ofy;
 

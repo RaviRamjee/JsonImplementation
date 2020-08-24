@@ -1,4 +1,4 @@
-package JsonImplementation;
+package ObjectifyImplementation;
 
 import javax.servlet.annotation.WebListener;
 

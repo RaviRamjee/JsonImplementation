@@ -4,6 +4,9 @@
 package JsonImplementation;
 
 import org.junit.Test;
+
+import ObjectifyImplementation.Library;
+
 import static org.junit.Assert.*;
 
 public class LibraryTest {

@@ -1,4 +1,4 @@
-package JsonImplementation;
+package ObjectifyImplementation;
 
 import java.io.IOException;
 
@@ -13,7 +13,7 @@ import com.googlecode.objectify.ObjectifyFilter;
 import com.googlecode.objectify.ObjectifyService;
 import com.json.bean.User;
 
-import JsonImplementation.UserImpl;
+import ObjectifyImplementation.UserImpl;
 
 /**
  * Servlet Filter implementation class Sample4

@@ -1,54 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
-	<servlet>
-		<description>
-		</description>
-		<display-name>UserServletTest</display-name>
-		<servlet-name>UserServletTest</servlet-name>
-		<servlet-class>com.json.controller.UserServletTest</servlet-class>
+	
+	<servlet> 
+		<servlet-name>UserDatastoreImpl</servlet-name>
+		<servlet-class>com.json.controller.UserDatastoreImpl</servlet-class>
 	</servlet>
-	<servlet>
-		<description>
-		</description>
-		<display-name>Testing</display-name>
-		<servlet-name>Testing</servlet-name>
-		<servlet-class>com.json.controller.Testing</servlet-class>
-	</servlet>
-	<servlet>
-		<description>
-		</description>
-		<display-name>UserServlet</display-name>
-		<servlet-name>UserServlet</servlet-name>
-		<servlet-class>JsonImplementation.UserServlet</servlet-class>
-	</servlet>
+
 	<servlet-mapping>
-		<servlet-name>UserServletTest</servlet-name>
-		<url-pattern>/UserServletTest</url-pattern>
+		<servlet-name>UserDatastoreImpl</servlet-name>
+		<url-pattern>/UserDatastoreImpl</url-pattern>
 	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>Testing</servlet-name>
-		<url-pattern>/Testing</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>UserServlet</servlet-name>
-		<url-pattern>/UserServlet</url-pattern>
-	</servlet-mapping>
- <filter>
-	<filter-name>UserObjectifyFilter</filter-name>
-	<filter-class>JsonImplementation.UserObjectifyFilter</filter-class>
-</filter>
-<filter-mapping>
-	<filter-name>UserObjectifyFilter</filter-name>
-	<url-pattern>/*</url-pattern>
-	<dispatcher>REQUEST</dispatcher>
-    <dispatcher>INCLUDE</dispatcher>
-    <dispatcher>FORWARD</dispatcher>
-</filter-mapping> 
-<listener>
-<listener-class>JsonImplementation.UserRegister</listener-class>
-</listener> 
+	
   
   <welcome-file-list>
-    <welcome-file>Index.html</welcome-file>
+    <welcome-file>Registration.html</welcome-file>
   </welcome-file-list>
 </web-app>

@@ -1,4 +1,4 @@
-package JsonImplementation;
+package ObjectifyImplementation;
 
 import java.io.IOException;
 import javax.servlet.ServletException;

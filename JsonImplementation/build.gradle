@@ -41,16 +41,17 @@ testCompile group: 'junit', name: 'junit', version: '4.4'
   
  }
  
-appengine {  // App Engine tasks configuration
-run {
+appengine { 
+run { 
+// local (dev_appserver) configuration (standard environments only)
 port = 8089
-jvmFlags = ["-Dappengine.fullscan.seconds=4"]
+automaticRestart = true
 }
-deploy {   // deploy configuration
-projectId = "objectifyimpl"
-stopPreviousVersion = false
-promote = false
-version =  "1"
-}
+ // default
+ // App Engine tasks configuration
+  deploy {   // deploy configuration
+    projectId ='datastoreImpl'
+    version = '1'
+  }
 }
 
